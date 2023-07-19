@@ -9,7 +9,7 @@ class JugadoresModel {
     return jugadoresEncontrados;
   };
   createOne = (jugador) => {
-    jugador.id = Math.floor(Math.random() * 1000);
+    jugador.id = Math.floor(Math.random() * 1000).toString();
     jugadores.push(jugador);
     return jugador;
   };
